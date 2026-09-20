@@ -15,8 +15,8 @@ const EarringsLyricsScroll = () => {
     target: targetRef,
   });
 
-  const yMotionValue = useTransform(scrollYProgress, [0, 1], [487, 0]);
-  const transform = useMotionTemplate`rotateX(30deg) translateY(${yMotionValue}px) translateZ(10px)`;
+  const yMotionValue = useTransform(scrollYProgress, [0, 1], [0, -420]);
+  const transform = useMotionTemplate`rotateX(24deg) translateY(${yMotionValue}px) translateZ(10px)`;
 
   const lyrics = `Her love is in your head
 You lost your earrings in her bed
@@ -65,7 +65,7 @@ Okay, well, I hope you like my mixtape`;
     <ReactLenis root>
       <div
         ref={targetRef}
-        className="relative z-0 h-[300vh] w-screen bg-[#f5f4f3] text-slate-900"
+        className="relative z-0 h-[300vh] w-screen overflow-hidden bg-[#f5f4f3] text-slate-900"
       >
         <div className="absolute left-1/2 top-[10%] grid -translate-x-1/2 content-start justify-items-center gap-6 text-center text-slate-900">
           <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-slate-900 after:to-transparent after:content-['']">

@@ -4,4 +4,11 @@ export default {
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
     './App.tsx',
-    './EarringsLyricsScroll
+    './EarringsLyricsScroll.tsx',
+    './page.tsx',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
